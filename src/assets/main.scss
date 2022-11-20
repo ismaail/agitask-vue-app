@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "GOTHIC";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url("./fonts/CenturyGothic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "GOTHIC";
+	font-style: normal;
+	font-weight: 700;
+	font-display: block;
+	src: url("./fonts/CenturyGothic-Bold") format('woff');
+}
+
+@layer base {
+	html {
+		@apply font-gothic tracking-wide;
+	}
+}
+
+@layer components {
+	a.active {
+		@apply opacity-100 border-b;
+	}
+}
+
+body {
+	background:
+		linear-gradient(rgba(#2db9d2, 0.7) 0%, rgba(#287fba, 0.7) 20%, rgba(#287fba, 0.7) 75%, rgba(#2db9d2, 0.7) 100%),
+		url("/images/bg.jpg") center center no-repeat;
+
+	//background: #2db9d2 url("/images/bg.jpg") center center no-repeat;
+	background-size: cover;
+}

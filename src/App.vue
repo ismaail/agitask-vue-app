@@ -6,19 +6,10 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
 	<header>
-		<div class="wrapper">
-			<nav>
-				<RouterLink to="/">Home</RouterLink>
-				<RouterLink to="/about">About</RouterLink>
-			</nav>
-		</div>
+		<nav class="container flex flex-wrap gap-x-4 px-2 sm:px-4 py-4 text-white font-bold">
+			<RouterLink to="/" class=" opacity-80 transition-all duration-75">Home</RouterLink>
+			<RouterLink to="/about" class=" opacity-80 transition-all duration-75">About</RouterLink>
+		</nav>
 	</header>
-
-	<RouterView/>
+	<RouterView />
 </template>
-
-<style>
-	a {
-		margin-right: 10px;
-	}
-</style>
